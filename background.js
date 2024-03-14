@@ -1,8 +1,8 @@
 // background.js
 console.log('screen to gpt');
 chrome.commands.onCommand.addListener(function(command) {
-  console.log('send screen to gpt');
-  if (command === "take-screenshot") {
+    if (command === "takeScreenshot") {
+
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
       var activeTab = tabs[0];
       chrome.scripting.executeScript({
