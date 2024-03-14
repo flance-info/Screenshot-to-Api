@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshot to GPT test",
+  "version": "2.0",
+  "description": "Take a screenshot and send it to GPT for analysis.",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "take-screenshot": {
+      "suggested_key": {
+        "default": "K"
+      },
+      "description": "Take a screenshot and send to GPT"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

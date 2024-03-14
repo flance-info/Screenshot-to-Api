@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../screenshoots/.idea/screenshoots.iml" filepath="$PROJECT_DIR$/../screenshoots/.idea/screenshoots.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/screenshot-to-gpt.iml" filepath="$PROJECT_DIR$/.idea/screenshot-to-gpt.iml" />
+    </modules>
+  </component>
+</project>
