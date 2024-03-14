@@ -10,15 +10,16 @@
   "background": {
     "service_worker": "background.js"
   },
-  "commands": {
-    "takeScreenshot": {
-      "suggested_key": {
-        "default": "K"
-      },
-      "description": "Take a screenshot and send to GPT"
-    }
-  },
-   "content_scripts": [
+ "commands": {
+   "takeScreenshot": {
+     "suggested_key": {
+       "default": "Alt+Y",
+       "mac": "Alt+Y"
+     },
+     "description": "Take a screenshot and send it to GPT"
+   }
+ },
+  "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]
