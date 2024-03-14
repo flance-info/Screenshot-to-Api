@@ -11,14 +11,14 @@
     "service_worker": "background.js"
   },
   "commands": {
-    "take-screenshot": {
+    "takeScreenshot": {
       "suggested_key": {
         "default": "K"
       },
       "description": "Take a screenshot and send to GPT"
     }
   },
-  "content_scripts": [
+   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"]

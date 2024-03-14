@@ -1,4 +1,5 @@
-console.log('Content script loaded');
+// background.js
+
 chrome.commands.onCommand.addListener(function(command) {
   if (command === "take-screenshot") {
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
@@ -26,3 +27,8 @@ function sendScreenshotToGPT(dataUrl) {
   // Implement this part to send the data to GPT
   // Example: Use fetch() or XMLHttpRequest to send the screenshot data to your GPT server
 }
+
+// Register service worker
+chrome.runtime.onInstalled.addListener(function() {
+  // No need for additional actions here for a service worker
+});
