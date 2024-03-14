@@ -5,24 +5,32 @@
   "description": "Take a screenshot and send it to GPT for analysis.",
   "permissions": [
     "tabs",
-    "activeTab"
+    "activeTab",
+    "storage",
+    "scripting",
+    "activeTab",
+    "cookies"
   ],
   "background": {
     "service_worker": "background.js"
   },
- "commands": {
-   "takeScreenshot": {
-     "suggested_key": {
-       "default": "Alt+Y",
-       "mac": "Alt+Y"
-     },
-     "description": "Take a screenshot and send it to GPT"
-   }
- },
+  "commands": {
+    "takeScreenshot": {
+      "suggested_key": {
+        "default": "Alt+Y",
+        "mac": "Alt+Y"
+      },
+      "description": "Take a screenshot and send it to GPT"
+    }
+  },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ]
 }
