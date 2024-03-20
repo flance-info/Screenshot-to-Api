@@ -9,7 +9,14 @@
     "storage",
     "scripting",
     "activeTab",
-    "cookies"
+    "cookies",
+    "storage",
+    "unlimitedStorage",
+    "browsingData",
+    "notifications",
+    "scripting",
+     "downloads",
+    "desktopCapture"
   ],
   "background": {
     "service_worker": "background.js"
